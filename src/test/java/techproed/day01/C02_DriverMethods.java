@@ -8,10 +8,10 @@ public class C02_DriverMethods {
 
         System.setProperty("chromeDriver","src/resources/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://amazon.com"); // getTitle() metodu sayfa başlığını verir
+        driver.get("https://amazon.com");
 
         // getTitle() sayfa başlığını verir
-        System.out.println("Amazon Actual Titlle " + driver.getTitle());
+        System.out.println("Amazon Actual Titlle " + driver.getTitle());// getTitle() metodu sayfa başlığını verir
         System.out.println("Amazon Actual Url : "+driver.getCurrentUrl());
         String amazonWindowHandle = driver.getWindowHandle();
         System.out.println(" Amazon Window Handle Değeri "+amazonWindowHandle); // 86CCFF6B494257EA400CECCFF02FDC98
