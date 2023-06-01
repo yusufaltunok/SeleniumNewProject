@@ -33,8 +33,9 @@ public class C02_WebElementLocator {
 
             //Xpath ile list kullanmadan tek seferde locate aldık
             WebElement sonucYazisiXpath = driver.findElement(By.xpath("(//div[@class='sg-col-inner'])[1]"));
+            System.out.println(sonucYazisiXpath.getText());
 
-            // sonuc sayısını yazdırın
+        // sonuc sayısını yazdırın
             String [] sonucSayisi = sonucYazisi.get(0).getText().split(" ");
             System.out.println("Sonuc Sayisi = "+sonucSayisi[2]);
 

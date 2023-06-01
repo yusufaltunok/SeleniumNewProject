@@ -15,6 +15,7 @@ public class C01_getTagName_GetAttribute {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
         // 1- amazon.com'a gidip arama kutusunu locate edin
         driver.get("https://amazon.com");
         WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
